@@ -50,6 +50,15 @@ header {
     margin: auto;
 }
 
+#cv {
+    color: white;
+    text-decoration: none;
+}
+
+#cv:hover {
+    color: #0088cc;
+}
+
 .projects {
     padding: 60px 20px;
 }
