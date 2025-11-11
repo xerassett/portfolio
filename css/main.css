@@ -169,6 +169,10 @@ header #pdp:hover {
     color: #4ecae9;
 }
 
+.project-work-status {
+    font-style: italic;
+    color: #b90000;
+}
 
 /* SKILLS */
 .skills {
