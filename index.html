@@ -1,170 +1,323 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Alex</title>
-  <link rel="stylesheet" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Alex Fioretzi-Ysabel</title>
+    <link rel="stylesheet" href="/css/main.css">
 </head>
+
 <body>
-  <header>
-    <div class="container header-inner">
-      <div class="logo">
-        <a href="#">
-          <img id="pdp" src="images/pdp.jpg" alt="Photo de profil">
-        </a>
-      </div>
-      <nav class="socials">
-        <a href="https://github.com/xerassett" target="_blank">
-          <img src="images/GitHub.png" alt="GitHub">
-        </a>
-        <a href="https://www.linkedin.com/in/alex-fioretzi-ysabel/" target="_blank">
-          <img src="images/linkedin.png" alt="LinkedIn">
-        </a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="introduction" id="about">
-      <div class="container">
-        <h1>Bonjour, je suis <span class="name">Alex</span></h1>
-        <p>Développeur web & logiciel passionné. Je recherche une alternance dès fin septembre ou un stage de 3 mois à partir du 30 mars.</p>
-        <a id="cv" href="images/CV_AlexFioretzi--Ysabel-portfolio.pdf" target="_blank" class="btn">Voir mon CV</a>
-      </div>
-    </section>
-
-    <section class="projects" id="projects">
-        <h2>💡 Mes Projets</h2>      
-        <div class="project-section">
-          <h3 class="project-subtitle">✨ Projets Personnels</h3>
-          <div class="project-container">
-            <div class="project-card">
-              <img src="images/morpion.JPG" alt="image morpion">
-              <h3>Morpion en ligne</h3>
-              <p>Développement d'un jeu de Tic-Tac-Toe avec la possibilité de visualiser les coups précédents.</p>
-              <ul>
-                <li>Langages : ReactJS</li>
-                <li>Outils : Visual Studio Code</li>
-                <li>Durée : 18 heures</li>
-              </ul>
+    <header>
+        <div class="container header-inner">
+            <div class="logo">
+                <a href="">
+                    <img id="pdp" src="images/pdp.jpg" alt="Photo de profil">
+                </a>
             </div>
-            <div class="project-card">
-              <img src="images/todolist.JPG" alt="image du site web to do list">
-              <h3>To Do List</h3>
-              <p>Un site web d'une page pour gérer et organiser facilement des tâches à accomplir.</p>
-              <ul>
-                <li>Langages : HTML, CSS, PHP</li>
-                <li>Outils : Visual Studio Code</li>
-                <li>Durée : 4 heures</li>
-              </ul>
+            <div class="header-menu">
+                <nav class="menu">
+                    <div class="nav-link">
+                        <a href="#skills">Compétences</a>
+                    </div>
+                    <div class="nav-link">
+                        <a href="#projects">Projets</a>
+                    </div>
+                    <div class="nav-link">
+                        <a href="#contact">Contact</a>
+                    </div>
+                </nav>
             </div>
-            <div class="project-card">
-                <img src="images/convertisseurs-unités.JPG" alt="image du site web du convertisseurs d'unités">
-                <h3>Convertisseurs d'unités</h3>
-                <p>Site web d'une page pour convertir facilement différentes unités</p>
-                <ul>
-                  <li>Langages : HTML, CSS, JavaScript</li>
-                  <li>Outils : Visual Studio Code</li>
-                  <li>Durée : 6 heures</li>
-                </ul>
-              </div>
-          </div>
+            <nav class="socials">
+                <a href="https://github.com/xerassett" target="_blank">
+                    <img src="images/GitHub.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/alex-fioretzi-ysabel/" target="_blank">
+                    <img src="images/linkedin.png" alt="LinkedIn">
+                </a>
+            </nav>
         </div>
 
-        <div class="project-section">
-            <h3 class="project-subtitle">📚 Projets Académiques</h3>
-            <div class="project-container">
-                <div class="project-card">
-                    <img src="images/spacey.JPG" alt="image du Site Web SpaceY">
-                    <h3>Site Web (SpaceY)</h3>
-                    <p>Un site web avec 5 pages, des animations, et un design responsive.</p>
-                    <ul>
-                        <li>Langages : HTML, CSS, JavaScript</li>
-                        <li>Outils : Visual Studio Code, GitLab, Figma</li>
-                        <li>Durée : 15 heures</li>
-                    </ul>
+        <div class="hero">
+            <div id="container"></div>
+            <div id="home" class="home">
+                <video autoplay muted loop class="black-hole-video">
+                    <source src="/assets/blackhole.webm" type="video/webm" />
+                </video>
+            </div>
+            <section class="introduction" id="about">
+                <div class="container">
+                    <h1>Bonjour, je suis <span class="name">Alex</span></h1>
+                    <p>Développeur web & logiciel passionné. Voici mon portfolio ou vous y retrouverez mes projets et
+                        compétences.</p>
+                    <a id="cv" href="images/CV_AlexFioretzi--Ysabel-portfolio.pdf" target="_blank" class="btn">Voir mon
+                        CV</a>
                 </div>
-                <div class="project-card">
-                    <img src="images/projet-reseau.png" alt="Illustration du projet Administration Réseau">
-                    <h3>Administration Réseau</h3>
-                    <p>Configuration d'un réseau virtuel, gestion des utilisateurs et rédaction d'un tutoriel.</p>
-                    <ul>
-                        <li>Outils : NextCloud, Terminal Linux</li>
-                        <li>Durée : 10 heures</li>
-                        <li class="project-work">Travail en équipe</li>
-                    </ul>
+            </section>
+        </div>
+    </header>
+
+    <main>
+        <section class="skills" id="skills">
+            <div class="skills-container">
+                <div class="skills-quadrant top-left">
+                    <div class="skills-circle">
+                        <div class="skill-item">
+                            <img src="images/logo/java.png" alt="Java">
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/logo/python.png" alt="Python">
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/logo/c.png" alt="C">
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/logo/csharp.png" alt="C#">
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/logo/c++.png" alt="C++">
+                        </div>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <img src="images/towa-gui.png" alt="Illustration du projet Jeu de Plateau">
-                    <h3>Jeu de Plateau</h3>
-                    <p>Développement d'un jeu de plateau avec des niveaux et une IA.</p>
-                    <ul>
-                        <li>Langages : Java</li>
-                        <li>Outils : Netbeans, GitLab</li>
-                        <li>Durée : 40 heures</li>
-                    </ul>
+
+                <div class="skills-quadrant top-right">
+                    <div class="skills-circle">
+                        <div class="skill-item">
+                            <img src="images/logo/html.png" alt="HTML">
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/logo/css.png" alt="CSS">
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/logo/js.png" alt="JavaScript">
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/logo/ts.png" alt="TypeScript">
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/logo/php.png" alt="PHP">
+                        </div>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <img src="images/logiciel-graphe.png" alt="Illustration du projet Logiciel de Graphe">
-                    <h3>Logiciel de création de Graphe</h3>
-                    <p>Application pour visualiser et manipuler des graphes.</p>
-                    <ul>
-                        <li>Langages : C#</li>
-                        <li>Outils : Visual Studio</li>
-                        <li>Durée : 12 heures</li>
-                    </ul>
+
+                <div class="skills-center">
+                    <video autoplay muted loop class="cards-video">
+                        <source src="/assets/cards-video.webm" type="video/webm" />
+                    </video>
                 </div>
-                <div class="project-card">
-                    <img src="images/ecographe.JPG" alt="image application map-graphique">
-                    <h3>Application Écographe</h3>
-                    <p>Développement d'une application pour visualiser des données sur une carte et des graphiques.</p>
-                    <ul>
-                        <li>Langages : C#, Python, SQL</li>
-                        <li>Outils : Visual Studio Code, Visual Studio, GitLab</li>
-                        <li>Durée : 80 heures</li>
-                        <li class="project-work">Travail en équipe</li>
-                    </ul>
+
+                <div class="skills-quadrant bottom-left">
+                    <div class="skills-circle">
+                        <div class="skill-item">
+                            <img src="images/logo/react.png" alt="React">
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/logo/vue.png" alt="Vue.js">
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/logo/symfony.png" alt="Symfony">
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/logo/tailwind.png" alt="Tailwind CSS">
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/logo/django.png" alt="Django">
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/logo/fastapi.png" alt="FastAPI">
+                        </div>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <img src="images/Appgraphe.png" alt="image application graphes">
-                    <h3>Logiciel de visualisation de Graphe</h3>
-                    <p>Développement d'un logiciel pour visualiser et comprendre les données d'un graphe.</p>
-                    <ul>
-                        <li>Langages : Java</li>
-                        <li>Outils : Netbeans</li>
-                        <li>Durée : 65 heures</li>
-                        <li class="project-work">Travail en équipe</li>
-                    </ul>
-                </div>
-                <div class="project-card">
-                    <img src="images/pixelwar.png" alt="image jeu en ligne">
-                    <h3>Jeu en ligne (Pixel War)</h3>
-                    <p>Développement d'un jeu en ligne pour poser des pixels.</p>
-                    <ul>
-                        <li>Langages : JavaScript</li>
-                        <li>Outils : Visual Studio Code</li>
-                        <li>Durée : 50 heures</li>
-                    </ul>
+
+                <div class="skills-quadrant bottom-right">
+                    <div class="skills-circle">
+                        <div class="skill-item">
+                            <img src="images/logo/sql.png" alt="SQL">
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/logo/mysql.png" alt="MySQL">
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/logo/oracle.png" alt="Oracle">
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/logo/postgresql.png" alt="PostgreSql">
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/logo/sqlite.png" alt="SqlLite">
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/logo/mongodb.png" alt="MongoDB">
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/logo/neo4j.png" alt="neo4j">
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <h2>💡 Mes Projets</h2>
+            <div class="project-section">
+                <h3 class="project-subtitle">✨ Projets Personnels</h3>
+                <div class="project-container">
+                    <div class="project-card">
+                        <img src="images/flight-tracker.png" alt="image flight-tracker">
+                        <h3>Flight Tracker</h3>
+                        <p>Développement d'un logiciel web permettant de visualiser les vols aériens en temps réel.</p>
+                        <ul>
+                            <li>Langages : VueJS, Python(FastAPI), PostgreSQL</li>
+                            <li>Outils : Visual Studio Code, GitHub</li>
+                            <li>Durée : 130 heures</li>
+                            <li class="project-work-status">En cours de programmation</li>
+                        </ul>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/school-projects.png" alt="image school projects">
+                        <h3>SchoolDesk</h3>
+                        <p>Développement d'un logiciel web et Desktop de gestion scolaire.</p>
+                        <ul>
+                            <li>Langages : ReactJS, NodeJS, Electron</li>
+                            <li>Outils : Visual Studio Code, GitHub</li>
+                            <li>Durée : 150 heures</li>
+                            <li class="project-work-status">En cours de programmation</li>
+                        </ul>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/morpion.JPG" alt="image morpion">
+                        <h3>Morpion en ligne</h3>
+                        <p>Développement d'un jeu de Tic-Tac-Toe avec la possibilité de visualiser les coups précédents.
+                        </p>
+                        <ul>
+                            <li>Langages : ReactJS</li>
+                            <li>Outils : Visual Studio Code</li>
+                            <li>Durée : 18 heures</li>
+                        </ul>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/todolist.JPG" alt="image du site web to do list">
+                        <h3>To Do List</h3>
+                        <p>Un site web d'une page pour gérer et organiser facilement des tâches à accomplir.</p>
+                        <ul>
+                            <li>Langages : HTML, CSS, PHP</li>
+                            <li>Outils : Visual Studio Code</li>
+                            <li>Durée : 4 heures</li>
+                        </ul>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/convertisseurs-unités.JPG" alt="image du site web du convertisseurs d'unités">
+                        <h3>Convertisseurs d'unités</h3>
+                        <p>Site web d'une page pour convertir facilement différentes unités</p>
+                        <ul>
+                            <li>Langages : HTML, CSS, JavaScript</li>
+                            <li>Outils : Visual Studio Code</li>
+                            <li>Durée : 6 heures</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-section">
+                <h3 class="project-subtitle">📚 Projets Académiques</h3>
+                <div class="project-container">
+                    <div class="project-card">
+                        <img src="images/spacey.JPG" alt="image du Site Web SpaceY">
+                        <h3>Site Web (SpaceY)</h3>
+                        <p>Un site web avec 5 pages, des animations, et un design responsive.</p>
+                        <ul>
+                            <li>Langages : HTML, CSS, JavaScript</li>
+                            <li>Outils : Visual Studio Code, GitLab, Figma</li>
+                            <li>Durée : 15 heures</li>
+                        </ul>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/projet-reseau.png" alt="Illustration du projet Administration Réseau">
+                        <h3>Administration Réseau</h3>
+                        <p>Configuration d'un réseau virtuel, gestion des utilisateurs et rédaction d'un tutoriel.</p>
+                        <ul>
+                            <li>Outils : NextCloud, Terminal Linux</li>
+                            <li>Durée : 10 heures</li>
+                            <li class="project-work">Travail en équipe</li>
+                        </ul>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/towa-gui.png" alt="Illustration du projet Jeu de Plateau">
+                        <h3>Jeu de Plateau</h3>
+                        <p>Développement d'un jeu de plateau avec des niveaux et une IA.</p>
+                        <ul>
+                            <li>Langages : Java</li>
+                            <li>Outils : Netbeans, GitLab</li>
+                            <li>Durée : 40 heures</li>
+                        </ul>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/logiciel-graphe.png" alt="Illustration du projet Logiciel de Graphe">
+                        <h3>Logiciel de création de Graphe</h3>
+                        <p>Application pour visualiser et manipuler des graphes.</p>
+                        <ul>
+                            <li>Langages : C#</li>
+                            <li>Outils : Visual Studio</li>
+                            <li>Durée : 12 heures</li>
+                        </ul>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/ecographe.JPG" alt="image application map-graphique">
+                        <h3>Application Écographe</h3>
+                        <p>Développement d'une application pour visualiser des données sur une carte et des graphiques.
+                        </p>
+                        <ul>
+                            <li>Langages : C#, Python, SQL</li>
+                            <li>Outils : Visual Studio Code, Visual Studio, GitLab</li>
+                            <li>Durée : 80 heures</li>
+                            <li class="project-work">Travail en équipe</li>
+                        </ul>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/Appgraphe.png" alt="image application graphes">
+                        <h3>Logiciel de visualisation de Graphe</h3>
+                        <p>Développement d'un logiciel pour visualiser et comprendre les données d'un graphe.</p>
+                        <ul>
+                            <li>Langages : Java</li>
+                            <li>Outils : Netbeans</li>
+                            <li>Durée : 65 heures</li>
+                            <li class="project-work">Travail en équipe</li>
+                        </ul>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/pixelwar.png" alt="image jeu en ligne">
+                        <h3>Jeu en ligne (Pixel War)</h3>
+                        <p>Développement d'un jeu en ligne pour poser des pixels.</p>
+                        <ul>
+                            <li>Langages : JavaScript</li>
+                            <li>Outils : Visual Studio Code</li>
+                            <li>Durée : 50 heures</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>Vous voulez en savoir plus ? Discutons !</p>
+                <a href="mailto:alex.fioretzi74@gmail.com" class="btn">Envoyer un email</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Alex Fioretzi‐Ysabel</p>
         </div>
-    </section>
+    </footer>
 
-<section class="contact" id="contact">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Vous voulez en savoir plus ? Discutons !</p>
-      <a href="mailto:alex.fioretzi74@gmail.com" class="btn">Envoyer un email</a>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <div class="container">
-    <p>&copy; 2024 Alex Fioretzi‐Ysabel</p>
-  </div>
-</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="stars.js"></script>
+    <script src="skills.js"></script>
 </body>
+
 </html>
